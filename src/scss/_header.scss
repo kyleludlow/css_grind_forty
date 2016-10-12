@@ -1,0 +1,68 @@
+#header {
+  display: flex;
+  height: 3.25em;
+  line-height: 3.25em;
+  width: 100%;
+  z-index: 1000;
+  color: white;
+  letter-spacing: 0.25em;
+  font-weight: 600;
+
+  .logo {
+    border: 0;
+    display: inline-block;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 1.5em;
+    font-size: 0.8em;
+
+    strong {
+      background-color: white;
+      color: $foreground-purple;
+      display: inline-block;
+      line-height: 1.65em;
+      margin-right: 0.325em;
+      padding: 0 0.125em 0 0.375em;
+      font-weight: 600;
+    }
+  }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      flex-grow: 1;
+
+      a {
+        font-size: 0.8em;
+        padding: 0 0.75em;
+        position: relative;
+        vertical-align: middle;
+
+        @media screen and (max-width:1280px) {
+          padding-right: 4.5em !important;
+        }
+        &::before {
+          background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScyNCcgaGVpZ2h0PSczMicgdmlld0JveD0nMCAwIDI0IDMyJyBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSdub25lJz48c3R5bGU+bGluZSB7IHN0cm9rZS13aWR0aDogMnB4OyBzdHJva2U6ICNmZmZmZmY7IH08L3N0eWxlPjxsaW5lIHgxPScwJyB5MT0nMTEnIHgyPScyNCcgeTI9JzExJyAvPjxsaW5lIHgxPScwJyB5MT0nMjEnIHgyPScyNCcgeTI9JzIxJyAvPjxsaW5lIHgxPScwJyB5MT0nMTYnIHgyPScyNCcgeTI9JzE2JyAvPjwvc3ZnPg==");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 24px 32px;
+          content: '';
+          display: block;
+          height: 100%;
+          position: absolute;
+          right: 1.5em;
+          top: 0;
+          vertical-align: middle;
+          width: 24px;
+          right: 2em;
+        }
+      }
+  }
+
+
+}
+
+.alt {
+  background-color: transparent;
+  position: absolute;
+}

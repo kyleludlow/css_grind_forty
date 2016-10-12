@@ -1,0 +1,12 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: $foreground-purple;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  line-height: 1.65;
+  color: white;
+}
